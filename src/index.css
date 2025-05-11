@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+    /* background-color: #1A191D; */
+    /* background-color: white; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.box-padding {
+    padding: 20px 40px;
+}
