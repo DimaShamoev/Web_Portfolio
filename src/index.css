@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    /* background-color: #1A191D; */
+    background-color: #1A191D;
     /* background-color: white; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
