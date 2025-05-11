@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import "tailwindcss";
 
 /* General */
 html {
     scroll-behavior: smooth;
+    /* cursor: none; */
 }
 
 body {
     background-color: #1A191D;
-    /* background-color: white; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "League Gothic", sans-serif;
 }
 
 /* Custom containers */
@@ -20,6 +21,10 @@ body {
 
 .box-padding {
     padding: 20px 40px;
+}
+
+.sm-box-padding {
+    padding: 10px 40px;
 }
 
 /* Loader */
@@ -57,5 +62,16 @@ body {
 
     to {
         width: 100%;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 640px) {
+    .box-padding {
+        padding: 20px 20px;
+    }
+    
+    .sm-box-padding {
+        padding: 10px 20px;
     }
 }

@@ -1,7 +1,9 @@
-const Home = () => {
+const Home: React.FunctionComponent = () => {
     return (
-        <div>Home</div>
+        <div className="home">
+
+        </div>
     )
 }
 
-export default Home
+export default Home 
