@@ -8,7 +8,8 @@ html {
 }
 
 body {
-    background-color: #1A191D;
+    background-color: #d3d3d3;
+    color: #d3d3d3;
     font-family: "League Gothic", sans-serif;
 }
 
@@ -20,11 +21,15 @@ body {
 }
 
 .box-padding {
-    padding: 20px 40px;
+    padding: 20px 60px;
+}
+
+.xl-box-padding {
+    padding: 40px 60px;
 }
 
 .sm-box-padding {
-    padding: 10px 40px;
+    padding: 10px 60px;
 }
 
 /* Loader */
@@ -65,6 +70,34 @@ body {
     }
 }
 
+/* header links */
+.animated-link {
+    position: relative;
+    padding: 8px 5px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2.5px;
+        background-color: white;
+        transition: width 0.25s ease-in-out;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    &:not(:hover)::before {
+        left: auto;
+        width: 0;
+        right: 0;
+    }
+}
+
 /* Media Query */
 @media screen and (max-width: 640px) {
     .box-padding {
@@ -73,5 +106,9 @@ body {
     
     .sm-box-padding {
         padding: 10px 20px;
+    }
+
+    .xl-box-padding {
+        padding: 20px 20px;
     }
 }

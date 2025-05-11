@@ -1,5 +1,5 @@
 export const headerTopToBottomAnim = {
-    initial: { y: -50, opacity: 0, scale: 0.95 },
+    initial: { y: -50, opacity: 0, scale: 0.9 },
     animate: {
         y: 0,
         opacity: 1,
@@ -8,8 +8,8 @@ export const headerTopToBottomAnim = {
             type: "spring",
             stiffness: 100,
             damping: 15,
-            duration: 2,
-            delay: 0.3,
+            duration: 1.5,
+            delay: 0.6,
         },
     },
 };

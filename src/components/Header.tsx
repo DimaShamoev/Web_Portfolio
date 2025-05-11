@@ -2,6 +2,7 @@ import { IoMenu } from "react-icons/io5"
 import Container from "./Container"
 import { headerTopToBottomAnim } from "../animations/headerAnimations"
 import { motion } from "framer-motion";
+import AnimatedLinks from "./UI/AnimatedLinks";
 
 const Header: React.FunctionComponent = () => {
     return (
@@ -22,11 +23,11 @@ const Header: React.FunctionComponent = () => {
                         variants={headerTopToBottomAnim}
                         className="nav flex items-center"
                     >
-                        <ul className="hidden items-center text-2xl gap-12 sm:flex">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Expertise</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul className="hidden items-center text-2xl gap-10 sm:flex">
+                            <AnimatedLinks link="#">Home</AnimatedLinks>
+                            <AnimatedLinks link="#">Expertise</AnimatedLinks>
+                            <AnimatedLinks link="#">Projects</AnimatedLinks>
+                            <AnimatedLinks link="#">Contact</AnimatedLinks>
                         </ul>
                         <span className="cursor-pointer text-2xl sm:hidden"><IoMenu /></span>
                     </motion.nav>

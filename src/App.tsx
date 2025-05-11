@@ -3,7 +3,7 @@ import { routes } from "./routes/routes"
 
 const App: React.FunctionComponent = () => {
     return (
-        <div className="App text-white">
+        <div className="App ">
             <RouterProvider router={routes} />
         </div>
     )
