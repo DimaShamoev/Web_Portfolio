@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* General */
 html {
     scroll-behavior: smooth;
 }
@@ -10,6 +11,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Custom containers */
 .container {
     width: 100%;
     max-width: 1700px;
@@ -18,4 +20,42 @@ body {
 
 .box-padding {
     padding: 20px 40px;
+}
+
+/* Loader */
+.loader-text {
+    color: transparent;
+    background-image: linear-gradient(to right, white 100%, white 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    animation: fillText 4s ease-in-out;
+}
+
+.progress-bar {
+    animation: progressBar 4s forwards;
+}
+
+@keyframes fillText {
+    0% {
+        background-size: 0;
+    }
+
+    50% {
+        background-size: 70%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes progressBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
