@@ -13,9 +13,9 @@ const Layout = () => {
             className="flex flex-col min-h-screen bg-[#1A191D] overflow-hidden"
         >
             <Header />
-            <div className="main flex flex-1 w-full container">
+            <main className="main flex flex-col flex-1 container">
                 <Outlet />
-            </div>
+            </main>
         </motion.div>
     )
 }

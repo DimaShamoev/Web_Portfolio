@@ -6,7 +6,7 @@ import AnimatedLinks from "./UI/AnimatedLinks";
 
 const Header: React.FunctionComponent = () => {
     return (
-        <header className="sticky top-0 flex justify-between items-center sm-box-padding backdrop-blur-md bg-[#1A191D]/70">
+        <header className="flex justify-between items-center sm-box-padding backdrop-blur-md bg-[#1A191D]/70">
             <Container>
                 <div className="header-wrapper flex items-center justify-between">
                     <motion.div
