@@ -6,7 +6,7 @@ const Landing: React.FunctionComponent = () => {
         <motion.div
             animate="animate"
             initial="initial"
-            className="flex flex-col justify-center min-h-[650px]"
+            className="flex flex-col justify-center"
         >
             <div className="home-landing flex flex-col">
                 <div className="text flex items-start justify-between">
