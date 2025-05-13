@@ -44,7 +44,7 @@ const Landing: React.FunctionComponent = () => {
                 </div>
             </div>
             <div className="anim w-full sm-box-padding">
-                <img className='mix-blend-plus-lighter h-16 w-auto cursor-pointer m-auto' src="/public/scroll.gif"></img>
+                <img className='mix-blend-plus-lighter h-16 w-auto cursor-pointer m-auto' src="/scroll.gif"></img>
             </div>
         </motion.div>
     );

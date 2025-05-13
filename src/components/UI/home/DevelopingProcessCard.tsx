@@ -5,9 +5,10 @@ interface IDevelopingProcessProps {
     title: string
     color: string
     children: React.ReactNode
+    className: string
 }
 
-const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = ({ id, title, color, children }) => {
+const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = ({ id, title, color, children, className }) => {
 
     const [isHovered, setIsHovered] = useState<boolean>(false)
 
@@ -22,7 +23,7 @@ const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = 
 
     return (
         <div
-            className={`relative border-2 w-full max-w-[650px] min-h-[400px] xs-box-padding flex flex-col gap-5 transition-all duration-300 ${isHovered ? '-translate-y-[10%]' : ''}`}
+            className={`border-2 w-full max-w-[1000px] min-h-[500px] bg-[#1A191D] xs-box-padding flex flex-col gap-5 transition-all duration-300 ${isHovered ? '-translate-y-[10%]' : ''} ${className}`}
             onMouseEnter={handleHover}
             onMouseLeave={handleUnhover}
         >
@@ -31,11 +32,11 @@ const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = 
                     <div className="title-id text-3xl">
                         0{ id }.
                     </div>
-                    <div className="title text-7xl uppercase">
+                    <div className="title text-9xl uppercase">
                         { title }
                     </div>
                 </div>
-                <div className={`text text-2xl transition-all duration-300 ${isHovered ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-[200px]'}`}>
+                <div className={`text text-2xl transition-all duration-300 ${isHovered ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-[100px]'}`}>
                     { children }
                 </div>
             </div>
