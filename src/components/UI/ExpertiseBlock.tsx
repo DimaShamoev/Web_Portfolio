@@ -1,7 +1,7 @@
 import type { IconType } from "react-icons"
 import { motion } from "motion/react"
 import { blockBottomToTop } from "../../animations/expertiseBlockAnimation"
-
+import { useState } from "react"
 interface IExpertiseBlockProps {
     children: React.ReactNode
     title: string
@@ -9,6 +9,7 @@ interface IExpertiseBlockProps {
 }
 
 const ExpertiseBlock: React.FunctionComponent<IExpertiseBlockProps> = ({ children, title, Icon }) => {
+
     return (
         <motion.div
             initial='initial'
