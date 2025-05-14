@@ -15,7 +15,7 @@ const Header: React.FunctionComponent = () => {
                         variants={headerTopToBottomAnim}
                         className="logo text-3xl sm:text-5xl"
                     >
-                        <a href="#">DIMA</a>
+                        <a href="#">{`<DIMA />`}</a>
                     </motion.div>
                     <motion.nav
                         initial="initial"

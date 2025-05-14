@@ -1,5 +1,5 @@
 import { HiOutlineComputerDesktop } from "react-icons/hi2"
-import ExpertiseBlock from "../ExpertiseBlock"
+import ExpertiseBlock from "./ExpertiseCard"
 import { FaReact } from "react-icons/fa"
 import { SiNestjs } from "react-icons/si"
 
@@ -11,7 +11,7 @@ const Expertise: React.FunctionComponent = () => {
             </div>
             <div className="expertise-blocks flex flex-wrap justify-center gap-4">
                 <ExpertiseBlock title="Software Development" Icon={HiOutlineComputerDesktop}>
-                Experienced in both functional and OOP programming, with strong problem-solving skills and clean code practices:  JavaScript, TypeScript.
+                    Experienced in both functional and OOP programming, with strong problem-solving skills and clean code practices:  JavaScript, TypeScript.
                 </ExpertiseBlock>
                 <ExpertiseBlock title="Frontend Development" Icon={FaReact}>
                     Builds websites with modern design and smooth user experience: React, HTML, CSS, and Tailwind

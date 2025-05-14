@@ -1,6 +1,7 @@
 import Expertise from '../components/UI/expertise/Expertise'
 import DevelopingProcess from '../components/UI/home/DevelopingProcess'
 import Landing from '../components/UI/home/Landing'
+import LatestProjects from '../components/UI/projects/LatestProjects'
 
 const Home: React.FunctionComponent = () => {
     return (
@@ -8,6 +9,7 @@ const Home: React.FunctionComponent = () => {
             <Landing />
             <Expertise />
             <DevelopingProcess />
+            <LatestProjects />
         </div>
     )
 }

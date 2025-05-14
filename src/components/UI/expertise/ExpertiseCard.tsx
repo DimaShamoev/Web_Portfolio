@@ -1,14 +1,14 @@
 import type { IconType } from "react-icons"
 import { motion } from "motion/react"
-import { blockBottomToTop } from "../../animations/expertiseBlockAnimation"
+import { blockBottomToTop } from "../../../animations/expertiseBlockAnimation"
 
-interface IExpertiseBlockProps {
+interface IExpertiseCardProps {
     children: React.ReactNode
     title: string
     Icon: IconType
 }
 
-const ExpertiseBlock: React.FunctionComponent<IExpertiseBlockProps> = ({ children, title, Icon }) => {
+const ExpertiseCard: React.FunctionComponent<IExpertiseCardProps> = ({ children, title, Icon }) => {
 
     return (
         <motion.div
@@ -33,4 +33,4 @@ const ExpertiseBlock: React.FunctionComponent<IExpertiseBlockProps> = ({ childre
     )
 }
 
-export default ExpertiseBlock
+export default ExpertiseCard
