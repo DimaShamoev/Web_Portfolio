@@ -1,4 +1,6 @@
+import { motion } from "motion/react"
 import { useState } from "react"
+import { projectBlockBottomToTop } from "../../../animations/projectsAnimations"
 
 interface IProjectCardProps {
     title: string
@@ -18,7 +20,11 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
     }
 
     return (
-        <div
+        <motion.div
+            initial='initial'
+            whileInView='animate'
+            variants={projectBlockBottomToTop}
+            viewport={{ once: true, amount: 0.1 }}
             className="project-card border-2 w-min min-w-[350px] grow"
             onMouseEnter={() => handelHover(true)}
             onMouseLeave={() => handelHover(false)}
@@ -38,7 +44,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
