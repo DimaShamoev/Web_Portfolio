@@ -177,9 +177,6 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-    .developing-card .expand-btn {
-        display: initial;
-    }
 }
 
 @media screen and (max-width: 1020px) {
@@ -242,6 +239,14 @@ body {
     .developing-card .title {
         font-size: 60px;
     }
+
+    .developing-card .expand-btn {
+        display: initial;
+    }
+
+    .developing-card {
+        min-height: 350px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -263,3 +268,15 @@ body {
         font-size: 4em;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .vertical-btn,
+    .horizontal-btn {
+        width: 15px;
+        height: 3px;
+    }
+}
+
+/* .developing-card {
+    transition: 0.4s ease-in-out;
+} */

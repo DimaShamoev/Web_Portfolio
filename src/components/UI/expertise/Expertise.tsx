@@ -5,7 +5,7 @@ import { SiNestjs } from "react-icons/si"
 
 const Expertise: React.FunctionComponent = () => {
     return (
-        <div className=" flex flex-col gap-7">
+        <div id="expertise" className=" flex flex-col gap-7">
             <div className="title uppercase text-6xl text-center">
                 Expertise
             </div>

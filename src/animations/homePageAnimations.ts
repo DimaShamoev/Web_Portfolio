@@ -41,7 +41,7 @@ export const blockBottomToTop = {
             ease: "easeOut",
             stiffness: 100,
             damping: 15,
-            duration: 0.2,
+            duration: 0.6,
         },
     }
 }

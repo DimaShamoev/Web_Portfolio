@@ -1,7 +1,7 @@
 import type { IconType } from "react-icons"
 import { motion } from "motion/react"
 import { blockBottomToTop } from "../../animations/expertiseBlockAnimation"
-import { useState } from "react"
+
 interface IExpertiseBlockProps {
     children: React.ReactNode
     title: string

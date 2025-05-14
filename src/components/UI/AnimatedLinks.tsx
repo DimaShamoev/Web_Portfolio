@@ -1,4 +1,3 @@
-
 interface IAnimatedLinksProps {
     children: React.ReactNode
     link: string

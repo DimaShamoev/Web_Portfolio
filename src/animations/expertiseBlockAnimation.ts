@@ -1,6 +1,6 @@
 export const blockBottomToTop = {
     initial: { y: 100, opacity: 0, scale: 0.9 },
-    animate: {
+    animate: (item: number) => ({
         y: 0,
         opacity: 1,
         scale: 1,
@@ -9,7 +9,7 @@ export const blockBottomToTop = {
             stiffness: 100,
             damping: 15,
             duration: 0.8,
-            delay: 0,
+            delay: item * 2,
         },
-    }
+    })
 }

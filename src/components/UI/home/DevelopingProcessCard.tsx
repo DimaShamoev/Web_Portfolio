@@ -18,7 +18,7 @@ const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = 
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 970)
+            setIsMobile(window.innerWidth <= 850)
         }
 
         handleResize()
@@ -42,11 +42,12 @@ const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = 
 
     return (
         <motion.div
-            className={`developing-card border-2 bg-[#1A191D] xs-box-padding flex flex-col gap-5 transition-all duration-300 ${selected ? '-translate-y-[10%]' : ''} ${className}`}
+            className={`developing-card border-2 bg-[#1A191D] xs-box-padding flex flex-col gap-5 ${selected ? 'transition-transform duration-200 -translate-y-[10%]' : ''} ${className}`}
             initial='initial'
             whileInView='animate'
             variants={blockBottomToTop}
-            viewport={{once: true, amount: 0.1}}
+            custom={id - 1}
+            viewport={{once: true, amount: 0.01}}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={handleClick}
@@ -62,11 +63,11 @@ const DevelopingProcessCard: React.FunctionComponent<IDevelopingProcessProps> = 
                         </div>
                     </div>
                     <div className="expand-btn relative cursor-pointer">
-                        <div className={`vertical-btn absolute right-[50%] w-[40px] h-[5px] rounded-full bg-white transition-all duration-200 ${selected ? 'rotate-0' : 'rotate-90'}`}></div>
-                        <div className="horizontal-btn absolute right-[50%] w-[40px] h-[5px] rounded-full bg-white"></div>
+                        <div className={`vertical-btn absolute right-[50%] w-[40px] h-[5px] rounded-full bg-white transition-all duration-500 ${selected ? 'rotate-0' : 'rotate-[270deg]'}`}></div>
+                        <div className={`horizontal-btn absolute right-[50%] w-[40px] h-[5px] rounded-full bg-white transition-all duration-500 ${selected ? '-rotate-180' : 'rotate-0'}`}></div>
                     </div>
                 </div>
-                <div className={`text text-2xl transition-all duration-300 ${selected ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-[100px]'}`}>
+                <div className={`text text-gray-100 text-2xl transition-all duration-300 ${selected ? 'opacity-70 -translate-y-0' : 'opacity-0 translate-y-[100px]'}`}>
                     { children }
                 </div>
             </div>

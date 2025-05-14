@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Header from "../Header"
 import { appear } from "../../animations/layoutAnimation"
 
-const Layout = () => {
+const Layout: React.FunctionComponent = () => {
 
     return (
         <motion.div
