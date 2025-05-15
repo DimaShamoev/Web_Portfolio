@@ -6,7 +6,7 @@ interface IProjectCardProps {
     title: string
     titleBG: string
     children: React.ReactNode
-    stack: string
+    stack: string[]
     url: string
 
 }
@@ -25,7 +25,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
             whileInView='animate'
             variants={projectBlockBottomToTop}
             viewport={{ once: true, amount: 0.1 }}
-            className="project-card border-2 w-min min-w-[350px] grow"
+            className="project-card border-2 w-min min-w-[300px] grow"
             onMouseEnter={() => handelHover(true)}
             onMouseLeave={() => handelHover(false)}
         >
@@ -39,7 +39,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
                 </div>
                 <div className="stack relative text-xl text-gray-50/50 h-[30px] overflow-hidden">
                     <div className={`absolute flex flex-col gap-0 transition-all duration-300 ${isHover ? 'top-[-26px]' : 'top-[0]'}`}>
-                        <a href={ url } className='underline'>Stack: { stack }</a>
+                        <a href={ url } className='underline'>Stack: { stack.map(s => <span> { s } </span>) }</a>
                         <a href={ url } className='underline'>Show Project</a>
                     </div>
                 </div>

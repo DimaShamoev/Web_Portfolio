@@ -2,8 +2,8 @@ import DevelopingProcessCard from "./DevelopingProcessCard"
 
 const DevelopingProcess: React.FunctionComponent = () => {
     return (
-        <div className="flex flex-col gap-12 pt-14">
-            <div className="title text-6xl uppercase">
+        <div className="flex flex-col gap-12">
+            <div className="title text-7xl uppercase">
                 Developing Process
             </div>
             <div className="cards relative w-full min-h-[1700px]">

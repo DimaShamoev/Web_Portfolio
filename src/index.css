@@ -117,6 +117,13 @@ body {
     display: none;
 }
 
+
+/* Experience */
+
+.experience-full-info.expanded {
+    height: calc-size(auto, size);
+}
+
 @media screen and (max-width: 1600px) {
     .developing-card {
         max-width: 700px;
@@ -152,6 +159,12 @@ body {
     .large-txt-2 {
         font-size: 7em;
     }
+
+    .developing-card {
+        left: 0;
+        width: 100%;
+        max-width: max-content;
+    }
 }
 
 @media screen and (max-width: 1120px) {
@@ -164,19 +177,6 @@ body {
         font-size: 0.8em;
         max-width: 200px;
     }
-}
-
-@media screen and (max-width: 1200px) {
-    .developing-card {
-        left: 0;
-        width: 100%;
-        max-width: max-content;
-    }
-
-    
-}
-
-@media screen and (max-width: 1100px) {
 }
 
 @media screen and (max-width: 1020px) {
@@ -249,6 +249,27 @@ body {
     }
 }
 
+@media screen and (max-width: 700px) {
+
+    .experience-full-info .info-body {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .experience-full-info .info-body .image-side img {
+        width: 100px;
+    }
+
+    .experience-full-info .info-body .text-side {
+        gap: 10px;
+    }
+
+    .position-info {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .box-padding {
         padding: 20px 20px;
@@ -263,16 +284,41 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .position-time {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .large-text {
         font-size: 4em;
     }
+
+    .position-name {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 450px) {
+
+    .developing-card .text {
+        font-size: 18px;
+    }
+
     .vertical-btn,
     .horizontal-btn {
         width: 15px;
         height: 3px;
+    }
+
+    .company-info {
+        flex-direction: column;
+        align-items: start;
+        gap: 2px;
+    }
+
+    .experience-text {
+        font-size: 16px;
     }
 }
