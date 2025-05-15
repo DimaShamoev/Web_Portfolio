@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { FaLink, FaLocationDot } from "react-icons/fa6"
-
 interface IExperienceInfoProps {
     position: string
     period: string
@@ -33,9 +32,9 @@ const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ positio
                         { period }
                     </div>
                 </div>
-                <div className="expand-btn relative cursor-pointer rounded-full w-ful h-[20px] w-[20px]">
-                    <div className={`exp-vertical absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2px] rounded-full bg-white transition-all duration-500 ${blockExpand ? 'rotate-0' : 'rotate-[270deg]'}`}></div>
-                    <div className={`exp-horizontal absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2px] rounded-full bg-white transition-all duration-500 ${blockExpand ? '-rotate-180' : 'rotate-0'}`}></div>
+                <div className="expand-btn relative cursor-pointer rounded-full w-ful h-[30px] w-[30px]">
+                    <div className={`lin-vertical absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2px] rounded-full bg-white transition-all duration-500 ${blockExpand ? 'rotate-0' : 'rotate-[270deg]'}`}></div>
+                    <div className={`line-horizontal absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2.1px] rounded-full bg-white transition-all duration-500 ${blockExpand ? '-rotate-180' : 'rotate-0'}`}></div>
                 </div>
             </div>
             <div className="info-body border-2 p-5 flex flex-row-reverse items-center gap-10">

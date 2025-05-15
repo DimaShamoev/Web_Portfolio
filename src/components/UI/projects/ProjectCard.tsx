@@ -37,10 +37,10 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
                 <div className="description text-2xl">
                     { children }
                 </div>
-                <div className="stack relative text-xl text-gray-50/50 h-[30px] overflow-hidden">
-                    <div className={`absolute flex flex-col gap-0 transition-all duration-300 ${isHover ? 'top-[-26px]' : 'top-[0]'}`}>
-                        <a href={ url } className='underline'>Stack: { stack.map(s => <span> { s } </span>) }</a>
-                        <a href={ url } className='underline'>Show Project</a>
+                <div className="stack relative text-xl text-gray-50/50 h-[20px] overflow-hidden">
+                    <div className={`absolute flex flex-col text-sm transition-all duration-150 ${isHover ? 'top-[-20px]' : 'top-[0]'}`}>
+                        <a href={ url } target="_blank" className='underline'>Stack: { stack.map(s => <span>{ s + ',' } </span>) }</a>
+                        <a href={ url } target="_blank" className='underline'>Show Project</a>
                     </div>
                 </div>
             </div>

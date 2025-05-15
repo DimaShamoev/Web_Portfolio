@@ -8,32 +8,32 @@ interface projectsDataType {
 
 export const latestProjectsData: projectsDataType[] = [
     {
-        title: "string",
+        title: "Form Space",
         titleBG: "bg-red-500",
-        children: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quasi voluptatibus dicta sunt enim minus magnam corporis mollitia, veniam labore, vitae quaerat quod culpa odit saepe natus facilis cum accusamus?",
-        stack: ["string", "string2"],
-        url: "string"
+        children: "A fullstack web application where user can create his own forms, fill up others' created forms, and interact through likes and comments",
+        stack: ["React", "TS", "Redux", "Axios", "Tailwind", "NestJs", "Postgres"],
+        url: "https://github.com/DimaShamoev/FormSpace"
     },
     {
-        title: "string",
-        titleBG: "bg-violet-400",
-        children: "React.ReactNode",
-        stack: ["string"],
-        url: "string"
+        title: "Expense Tracker",
+        titleBG: "bg-violet-500",
+        children: "Expense Tracker is a full-stack web application designed to manage expenses and income transactions with user authentication and category management",
+        stack: ["React", "TS", "Redux", "Axios", "Tailwind", "NestJs", "Postgres"],
+        url: "https://github.com/DimaShamoev/ExpenseTracker"
     },
     {
-        title: "string",
-        titleBG: "bg-green-500",
-        children: "React.ReactNode",
-        stack: ["string"],
-        url: "string"
+        title: "Blogging Space",
+        titleBG: "bg-green-400/70",
+        children: "A full-stack application that allows users to create and read blog posts, with authorization features to ensure only registered users can create posts and view personalized content.",
+        stack: ["React", "TS", "Redux", "Axios", "Css/Scss", "NestJs"],
+        url: "https://github.com/DimaShamoev/blog-post-app"
     },
     {
-        title: "string",
+        title: "Ebay Clone",
         titleBG: "bg-[#AB5E45]",
-        children: "React.ReactNode",
-        stack: ["string"],
-        url: "string"
+        children: "A full-stack PHP app with user authentication, item listings, shopping cart, order management, and an admin panel — built without a framework",
+        stack: ["Php", "Css", "Js", "MySql"],
+        url: "https://github.com/DimaShamoev/ebay-php-clone"
     },
 ]
 

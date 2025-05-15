@@ -1,11 +1,19 @@
+import { DevelopingTextBottomToRight } from "../../../animations/homePageAnimations"
 import DevelopingProcessCard from "./DevelopingProcessCard"
+import { motion } from "motion/react"
 
 const DevelopingProcess: React.FunctionComponent = () => {
     return (
         <div className="flex flex-col gap-12">
-            <div className="title text-7xl uppercase">
+            <motion.div
+                initial='initial'
+                whileInView='animate'
+                variants={DevelopingTextBottomToRight}
+                viewport={{ once: true, amount: 0.1 }}
+                className="title text-7xl uppercase"
+            >
                 Developing Process
-            </div>
+            </motion.div>
             <div className="cards relative w-full min-h-[1700px]">
                 <DevelopingProcessCard id={1} title="Planning" color="bg-[#4D9F78]" className='absolute left-[0px] top-[0px]'>
                     Define the project's purpose, understand the target audience, gather detailed requirements, and decide on the essential features, technologies, tools, and development timeline before writing a single line of code to ensure everything starts on the right path
