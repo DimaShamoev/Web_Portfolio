@@ -1,4 +1,5 @@
 interface IExperience {
+    id: number
     position: string
     period: string
     imgUrl: string
@@ -10,8 +11,9 @@ interface IExperience {
 
 export const experiences: IExperience[] = [
     {
+        id: 1,
         position: '“Commercial Software Development — JavaScript” training',
-        period: '2024 - 2024',
+        period: '2025 - 2025',
         imgUrl: '/image/itransition_logo.jpg',
         location: 'Tbilisi, Georgia (Remote)',
         siteUrl: 'https://www.itransition.com/',

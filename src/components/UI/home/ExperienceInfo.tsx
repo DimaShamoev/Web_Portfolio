@@ -34,7 +34,7 @@ const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ positio
                 </div>
                 <div className="expand-btn relative cursor-pointer rounded-full w-ful h-[30px] w-[30px]">
                     <div className={`lin-vertical absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2px] rounded-full bg-white transition-all duration-500 ${blockExpand ? 'rotate-0' : 'rotate-[270deg]'}`}></div>
-                    <div className={`line-horizontal absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2.1px] rounded-full bg-white transition-all duration-500 ${blockExpand ? '-rotate-180' : 'rotate-0'}`}></div>
+                    <div className={`line-horizontal absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2.5px] rounded-full bg-white transition-all duration-500 ${blockExpand ? '-rotate-180' : 'rotate-0'}`}></div>
                 </div>
             </div>
             <div className="info-body border-2 p-5 flex flex-row-reverse items-center gap-10">
@@ -56,7 +56,7 @@ const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ positio
                         { children }
                     </div>
                     <div className="stack flex flex-wrap gap-2">
-                        { stack.map(s => <span className="bg-blue-900 py-1 px-2.5 rounded-md text-xs"> { s } </span>) }
+                        { stack.map(s => <span key={Math.random()} className="bg-blue-900 py-1 px-2.5 rounded-md text-xs"> { s } </span>) }
                     </div>
                 </div>
             </div>

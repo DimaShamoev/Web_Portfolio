@@ -24,7 +24,7 @@ const ExperienceBlock: React.FunctionComponent = () => {
             >
 
                 { experiences.map((experience => (
-                    <ExperienceInfo position={ experience.position } period={ experience.period } location={ experience.location } siteUrl={ experience.siteUrl } imgUrl={ experience.imgUrl } stack={ experience.stack }>
+                    <ExperienceInfo key={experience.id} position={ experience.position } period={ experience.period } location={ experience.location } siteUrl={ experience.siteUrl } imgUrl={ experience.imgUrl } stack={ experience.stack }>
                         { experience.children }
                     </ExperienceInfo>
                 ))) }

@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 const DevelopingProcess: React.FunctionComponent = () => {
     return (
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-12 mb-20">
             <motion.div
                 initial='initial'
                 whileInView='animate'
@@ -24,7 +24,7 @@ const DevelopingProcess: React.FunctionComponent = () => {
                 </DevelopingProcessCard>
 
                 <DevelopingProcessCard id={3} title="Development" color="bg-[#AB5E45]" className="absolute left-[400px] top-[600px] z-[1]">
-                    Begin constructing the real application or website according to the planned design. This involves creating responsive frontend components, implementing backend logic, connecting APIs, handling databases, and ensuring seamless interaction between different parts of the system for functionality
+                    Start building the real app or website using the planned design. This means making responsive frontend parts, adding backend functions, connecting APIs, working with the database, and making sure everything works well together
                 </DevelopingProcessCard>
 
                 <DevelopingProcessCard id={4} title="Testing" color="bg-[#9A679B]" className="absolute left-[200px] top-[900px] z-[1]">

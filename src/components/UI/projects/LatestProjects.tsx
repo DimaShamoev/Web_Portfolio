@@ -19,7 +19,7 @@ const LatestProjects: React.FunctionComponent = () => {
             <div className="latest-project-list flex gap-5 flex-wrap">
 
                 {latestProjectsData.map((data => (
-                    <ProjectCard title={data.title} titleBG={data.titleBG} stack={data.stack} url={data.url}>
+                    <ProjectCard key={data.id} title={data.title} titleBG={data.titleBG} stack={data.stack} url={data.url}>
                         { data.children }
                     </ProjectCard>
                 )))}

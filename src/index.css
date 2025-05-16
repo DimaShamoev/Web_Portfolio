@@ -322,3 +322,10 @@ body {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .footer-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
