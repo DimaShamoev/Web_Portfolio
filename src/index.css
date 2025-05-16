@@ -117,29 +117,25 @@ body {
     display: none;
 }
 
-
 /* Experience */
-
 .experience-full-info.expanded {
     height: calc-size(auto, size);
 }
 
 @media screen and (max-width: 1600px) {
+
     .developing-card {
         max-width: 700px;
-    }
-}
-
-@media screen and (min-width: 1510px) {
-    /* Landing text */
-    .home-landing {
-        gap: 70px;
     }
 }
 
 @media screen and (max-width: 1510px) {
     
     /* Landing text */
+    .home-landing {
+        gap: 70px;
+    }
+
     .large-txt-1 {
         font-size: 11em;
     }
@@ -188,6 +184,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+    /* Developing process UI card */
     .developing-card {
         max-width: 100%;
         width: 100%;
@@ -198,6 +195,7 @@ body {
         font-size: 20px;
     }
 
+    /* Expand btn +- */
     .vertical-btn,
     .horizontal-btn {
         width: 30px;
@@ -236,6 +234,11 @@ body {
         max-width: 100%;
     }
 
+    /* Developing process UI card */
+    .cards {
+        min-height: 1600px;
+    }
+
     .developing-card .title {
         font-size: 60px;
     }
@@ -251,6 +254,7 @@ body {
 
 @media screen and (max-width: 700px) {
 
+    /* Experience */
     .experience-full-info .info-body {
         flex-direction: column;
         align-items: start;
@@ -271,6 +275,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+    /* Custom Containers */
     .box-padding {
         padding: 20px 20px;
     }
@@ -285,33 +290,44 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    /* Experience */
     .position-time {
         display: none;
     }
 }
 
 @media screen and (max-width: 550px) {
+    /* Home Landing */
     .large-text {
         font-size: 4em;
     }
 
+    /* Experience */
     .position-name {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 450px) {
 
-    .developing-card .text {
-        font-size: 18px;
+    /* Developing process UI card */
+
+    .developing-card .title {
+        font-size: 35px;
     }
 
+    .developing-card .text {
+        font-size: 16px;
+    }
+
+    /* Expand btn +- */
     .vertical-btn,
     .horizontal-btn {
         width: 15px;
         height: 3px;
     }
 
+    /* Experience */
     .company-info {
         flex-direction: column;
         align-items: start;
@@ -324,6 +340,7 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+    /* Footer */
     .footer-body {
         flex-direction: column;
         gap: 10px;

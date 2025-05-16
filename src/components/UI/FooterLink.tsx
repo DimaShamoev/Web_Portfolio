@@ -8,7 +8,7 @@ interface IFooterLinkProps {
 
 const FooterLink: React.FunctionComponent<IFooterLinkProps> = ({ link, target, children }) => {
     return (
-        <li><Link to={link} target={`_${target}`} className="text-xl opacity-70 hover:underline hover:opacity-90">{ children }</Link></li>
+        <li><Link to={ link } target={`_${ target }`} className="text-xl opacity-70 hover:underline hover:opacity-90">{ children }</Link></li>
     )
 }
 

@@ -53,7 +53,7 @@ const Footer: React.FunctionComponent = () => {
                 <hr className="h-[2px] w-full bg-black/20 border-none rounded-full" />
                 <motion.div
                     variants={footerTextBottomToTop}
-                    className="copy-rights"
+                    className="copy-rights uppercase"
                 >
                     © 2025. Copyright. All Rights reserved
                 </motion.div>

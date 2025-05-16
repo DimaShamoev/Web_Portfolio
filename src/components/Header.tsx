@@ -2,6 +2,7 @@ import { IoMenu } from "react-icons/io5"
 import { headerTopToBottomAnim } from "../animations/headerAnimations"
 import { motion } from "framer-motion";
 import AnimatedLinks from "./UI/AnimatedLinks";
+import { Link } from "react-router-dom";
 
 const Header: React.FunctionComponent = () => {
     return (
@@ -10,18 +11,18 @@ const Header: React.FunctionComponent = () => {
                 <motion.div
                     initial="initial"
                     animate="animate"
-                    variants={headerTopToBottomAnim}
+                    variants={ headerTopToBottomAnim }
                     className="logo text-3xl sm:text-5xl"
                 >
-                    <a href="#">{`<DIMA />`}</a>
+                    <Link to="/">{ `<DIMA />` }</Link>
                 </motion.div>
                 <motion.nav
                     initial="initial"
                     animate="animate"
-                    variants={headerTopToBottomAnim}
+                    variants={ headerTopToBottomAnim }
                     className="nav flex items-center"
                 >
-                    <ul className="hidden items-center text-2xl gap-10 sm:flex">
+                    <ul className="hidden items-center text-2xl gap-10 sm:flex uppercase">
                         <AnimatedLinks link="#">Home</AnimatedLinks>
                         <AnimatedLinks link="#">Expertise</AnimatedLinks>
                         <AnimatedLinks link="#">Projects</AnimatedLinks>

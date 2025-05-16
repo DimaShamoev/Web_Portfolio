@@ -10,7 +10,7 @@ const Layout: React.FunctionComponent = () => {
         <motion.div
             initial='initial'
             animate='animate'
-            variants={appear}
+            variants={ appear }
             className="flex flex-col min-h-screen bg-[#1A191D] overflow-hidden"
         >
             <Header />

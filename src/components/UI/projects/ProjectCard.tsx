@@ -26,7 +26,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ title, titleB
             viewport={{ once: true, amount: 0.1 }}
             onMouseEnter={() => handelHover(true)}
             onMouseLeave={() => handelHover(false)}
-            className="project-card border-2 w-min min-w-[300px] grow"
+            className="project-card border-2 w-min min-w-[250px] grow"
         >
             <div className={`project-title relative text-6xl xs-box-padding border-b-2 transition-all duration-150 flex items-center justify-center text-center`}>
                 <p className="z-[1] relative">{ title }</p>
