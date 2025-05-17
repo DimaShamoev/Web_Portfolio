@@ -1,9 +1,13 @@
+import ExpertiseBlock from "../components/UI/expertise/ExpertiseBlock";
 import ExpertiseInfiniteSlider from "../components/UI/expertise/ExpertiseInfiniteSlider";
+import ExpertiseBars from "./ExpertiseBar";
 
 const Expertise: React.FunctionComponent = () => {
     return (
-        <div className="sm-box-padding overflow-hidden text-7xl flex gap-19">
+        <div className="sm-box-padding overflow-hidden">
+            <ExpertiseBars />
             <ExpertiseInfiniteSlider />
+            <ExpertiseBlock />
         </div>
     );
 };
