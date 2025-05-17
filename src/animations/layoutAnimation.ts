@@ -1,5 +1,5 @@
 export const appear = {
-    initial: { y: '100vh', opacity: 0, borderRadius: '80% 80% 0 0' },
+    initial: { y: '200vh', opacity: 0, borderRadius: '80% 80% 0 0' },
     animate: {
         y: 0,
         opacity: 1,

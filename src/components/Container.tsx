@@ -4,7 +4,7 @@ interface IContainerProps {
 
 const Container: React.FunctionComponent<IContainerProps> = ({ children }) => {
     return (
-        <div className="container">
+        <div className="home w-full xl-box-padding flex flex-col gap-20 overflow-hidden">
             { children }
         </div>
     )

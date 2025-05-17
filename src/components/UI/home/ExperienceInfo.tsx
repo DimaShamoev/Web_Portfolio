@@ -12,7 +12,7 @@ interface IExperienceInfoProps {
 
 const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ position, period, imgUrl, location, siteUrl, stack, children }) => {
 
-    const [blockExpand, SetBlockExpand] = useState<boolean>(false)
+    const [blockExpand, SetBlockExpand] = useState<boolean>(true)
 
     const handelClick = (): void => {
         SetBlockExpand(prev => !prev)

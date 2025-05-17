@@ -1,11 +1,11 @@
 import { HiOutlineComputerDesktop } from "react-icons/hi2"
-import ExpertiseBlock from "./ExpertiseCard"
 import { FaReact } from "react-icons/fa"
 import { SiNestjs } from "react-icons/si"
 import { motion } from "motion/react"
 import { textBottomToTop } from "../../../animations/expertiseBlockAnimation"
+import ExpertiseCard from "./ExpertiseCard"
 
-const Expertise: React.FunctionComponent = () => {
+const ExpertiseBlock: React.FunctionComponent = () => {
     return (
         <motion.div
             initial='initial'
@@ -18,18 +18,18 @@ const Expertise: React.FunctionComponent = () => {
                 Expertise
             </div>
             <div className="expertise-blocks flex flex-wrap justify-center gap-4">
-                <ExpertiseBlock title="Software Development" Icon={HiOutlineComputerDesktop}>
+                <ExpertiseCard title="Software Development" Icon={HiOutlineComputerDesktop}>
                     Experienced in both functional and OOP programming, with strong problem-solving skills and clean code practices:  JavaScript, TypeScript.
-                </ExpertiseBlock>
-                <ExpertiseBlock title="Frontend Development" Icon={FaReact}>
+                </ExpertiseCard>
+                <ExpertiseCard title="Frontend Development" Icon={FaReact}>
                     Builds websites with modern design and smooth user experience: React, HTML, CSS, and Tailwind
-                </ExpertiseBlock>
-                <ExpertiseBlock title="Backend Development" Icon={SiNestjs}>
+                </ExpertiseCard>
+                <ExpertiseCard title="Backend Development" Icon={SiNestjs}>
                     Creates server-side applications using NestJS to handle data and connect frontend to backend: JavaScript, TypeScript, NestJS, Postgresql
-                </ExpertiseBlock>
+                </ExpertiseCard>
             </div>
         </motion.div>
     )
 }
 
-export default Expertise
+export default ExpertiseBlock

@@ -22,9 +22,9 @@ const Header: React.FunctionComponent = () => {
                     variants={ headerTopToBottomAnim }
                     className="nav flex items-center"
                 >
-                    <ul className="hidden items-center text-2xl gap-10 sm:flex uppercase">
-                        <AnimatedLinks link="#">Home</AnimatedLinks>
-                        <AnimatedLinks link="#">Expertise</AnimatedLinks>
+                    <ul className="hidden items-center text-2xl gap-6 sm:flex uppercase">
+                        <AnimatedLinks link="/">Home</AnimatedLinks>
+                        <AnimatedLinks link="/expertise">Expertise</AnimatedLinks>
                         <AnimatedLinks link="#">Projects</AnimatedLinks>
                         <AnimatedLinks link="#">Contact</AnimatedLinks>
                     </ul>

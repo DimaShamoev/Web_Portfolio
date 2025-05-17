@@ -8,7 +8,7 @@ const Landing: React.FunctionComponent = () => {
             initial="initial"
             className="flex flex-col justify-center"
         >
-            <div className="home-landing flex flex-col">
+            <div className="home-landing flex flex-col xl:gap-20">
                 <div className="text flex items-start justify-between">
                     <motion.div
                         variants={textLeftToRight}

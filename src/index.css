@@ -122,8 +122,13 @@ body {
     height: calc-size(auto, size);
 }
 
-@media screen and (max-width: 1600px) {
+/* Expertise Page */
+/* Expertise slider */
 
+
+/* viewport */
+@media screen and (max-width: 1600px) {
+    /* Developing UI card */
     .developing-card {
         max-width: 700px;
     }
