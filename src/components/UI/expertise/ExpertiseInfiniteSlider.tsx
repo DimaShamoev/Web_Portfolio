@@ -9,7 +9,7 @@ import { SiMysql, SiNestjs, SiRedux, SiTypescript } from "react-icons/si";
 const ExpertiseInfiniteSlider: React.FunctionComponent = () => {
     return (
         <>
-            <Marquee className="expertise-block flex py-5" speed={ 150 } pauseOnHover={ true } delay={ 5 }>
+            <Marquee className="expertise-block flex items-center py-5 overflow-hidden" speed={ 150 } pauseOnHover={ true } gradient gradientColor="#1A191D" gradientWidth={200}>
                 <ul className="expertise-slider text-7xl flex items-center justify-center [&_li]:mx-8 [&_svg]:max-w-none">
                     <li className="text-[#E34E26]"><IoLogoHtml5 /></li>
                     <li className="text-[#1572B6]"><IoLogoCss3 /></li>
