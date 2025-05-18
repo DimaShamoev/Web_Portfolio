@@ -86,7 +86,7 @@ export const projectsData: projectsDataType[] = [
     {
         id: 6,
         title: 'Coming Soon',
-        titleBG: 'bg-[#7886C7]',
+        titleBG: 'bg-[#70c95b]',
         children: "This project is still in progress and will be released soon. It's being thoughtfully designed and developed to provide a useful and enjoyable experience. We're working hard to ensure everything works smoothly and looks great. Stay tuned for more",
         stack: ['Coming Soon' ],
         url: 'https://github.com/DimaShamoev'

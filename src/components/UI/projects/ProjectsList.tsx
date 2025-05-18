@@ -14,6 +14,7 @@ const ProjectsList: React.FunctionComponent = () => {
             <div className="">
                 {projectsData.map((project) => (
                     <ProjectCard
+                        key={project.id}
                         title={project.title}
                         stack={project.stack}
                         projectUrl={project.url}

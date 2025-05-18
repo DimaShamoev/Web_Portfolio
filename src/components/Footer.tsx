@@ -28,7 +28,9 @@ const Footer: React.FunctionComponent = () => {
                             </motion.div>
                         </div>
                         <div className="cv-download">
-                            <a href="#" className="uppercase bg-black text-white border-4 border-transparent py-2 px-2 rounded-lg transition-colors duration-300 hover:bg-white hover:text-black hover:border-black">Download CV</a>
+                            <a href="/assets/DimaShamoev_CV.pdf" download className="uppercase bg-black text-white border-4 border-transparent py-2 px-2 rounded-lg transition-colors duration-300 hover:bg-white hover:text-black hover:border-black">
+                                Download CV
+                            </a>
                         </div>
                     </div>
                     <motion.div
