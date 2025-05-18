@@ -10,3 +10,6 @@ const App: React.FunctionComponent = () => {
 }
 
 export default App
+
+// TODO
+// Optimize and clean project

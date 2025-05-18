@@ -30,13 +30,13 @@ const ExpertiseBars: React.FC = () => {
                         <div className="mb-1 text-sm font-medium text-white uppercase">
                             { skill.name }
                         </div>
-                        <div className="w-full border-2 h-4 overflow-hidden">
+                        <div className="w-full border-2 h-5 overflow-hidden">
                             <motion.div
                                 variants={ expertiseLevelAnim }
                                 whileInView={{ width: `${skill.level}%` }}
                                 transition={ expertiseLevelAnim.transition }
                                 viewport={{ once: true, amount: 0.1}}
-                                className="h-4 bg-white origin-left"
+                                className="h-5 bg-white origin-left"
                             />
                         </div>
                         <div className="text-right text-xs text-white mt-1">{ skill.level }%</div>

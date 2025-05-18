@@ -1,7 +1,7 @@
 import { projectTextLeftToRight } from "../../../animations/projectsAnimations";
 import { latestProjectsData } from "../../../data/projects.data";
-import ProjectCard from "./ProjectCard";
 import { motion } from "motion/react";
+import LatestProjectCard from "./LatestProjectCard";
 
 const LatestProjects: React.FunctionComponent = () => {
 
@@ -19,9 +19,9 @@ const LatestProjects: React.FunctionComponent = () => {
             <div className="latest-project-list flex gap-5 flex-wrap">
 
                 {latestProjectsData.map((data => (
-                    <ProjectCard key={data.id} title={data.title} titleBG={data.titleBG} stack={data.stack} url={data.url}>
+                    <LatestProjectCard key={data.id} title={data.title} titleBG={data.titleBG} stack={data.stack} url={data.url}>
                         { data.children }
-                    </ProjectCard>
+                    </LatestProjectCard>
                 )))}
 
             </div>

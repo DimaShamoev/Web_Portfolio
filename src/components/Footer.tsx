@@ -12,19 +12,24 @@ const Footer: React.FunctionComponent = () => {
         >
             <div className="footer-wrapper w-full container xl-box-padding flex flex-col gap-5">
                 <div className="footer-body flex justify-between">
-                    <div className="footer-col-1">
-                        <motion.div
-                            variants={footerTextLeftToRight}
-                            className="logo text-7xl"
-                        >
-                            DIMA
-                        </motion.div>
-                        <motion.div 
-                            variants={footerTextLeftToRight}
-                            className="made-in text-lg uppercase"
-                        >
-                            crafted in georgia
-                        </motion.div>
+                    <div className="footer-col-1 flex flex-col">
+                        <div className="footer-col-1-row-1 flex-1">
+                            <motion.div
+                                variants={footerTextLeftToRight}
+                                className="logo text-7xl"
+                            >
+                                DIMA
+                            </motion.div>
+                            <motion.div 
+                                variants={footerTextLeftToRight}
+                                className="made-in text-lg uppercase"
+                            >
+                                crafted in georgia
+                            </motion.div>
+                        </div>
+                        <div className="cv-download">
+                            <a href="#" className="uppercase bg-black text-white border-4 border-transparent py-2 px-2 rounded-lg transition-colors duration-300 hover:bg-white hover:text-black hover:border-black">Download CV</a>
+                        </div>
                     </div>
                     <motion.div
                         variants={footerTextRightToBottom}
@@ -34,8 +39,8 @@ const Footer: React.FunctionComponent = () => {
                             <ul className="flex flex-col gap-1.5">
                                 <li className="text-4xl uppercase">Sitemap</li>
                                 <FooterLink link="/" target="parent">Home</FooterLink>
-                                <FooterLink link="" target="parent">Expertise</FooterLink>
-                                <FooterLink link="" target="parent">Projects</FooterLink>
+                                <FooterLink link="/expertise" target="parent">Expertise</FooterLink>
+                                <FooterLink link="/projects" target="parent">Projects</FooterLink>
                                 <FooterLink link="" target="parent">Contact</FooterLink>
                             </ul>
                         </div>

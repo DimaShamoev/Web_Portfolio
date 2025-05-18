@@ -346,6 +346,10 @@ body {
     /* Footer */
     .footer-body {
         flex-direction: column;
-        gap: 10px;
+        gap: 25px;
+    }
+
+    .footer-col-1 {
+        gap: 25px;
     }
 }

@@ -25,7 +25,7 @@ const Header: React.FunctionComponent = () => {
                     <ul className="hidden items-center text-2xl gap-6 sm:flex uppercase">
                         <AnimatedLinks link="/">Home</AnimatedLinks>
                         <AnimatedLinks link="/expertise">Expertise</AnimatedLinks>
-                        <AnimatedLinks link="#">Projects</AnimatedLinks>
+                        <AnimatedLinks link="/projects">Projects</AnimatedLinks>
                         <AnimatedLinks link="#">Contact</AnimatedLinks>
                     </ul>
                     <span className="cursor-pointer text-2xl sm:hidden"><IoMenu /></span>
