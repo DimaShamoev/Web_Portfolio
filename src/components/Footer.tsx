@@ -41,7 +41,7 @@ const Footer: React.FunctionComponent = () => {
                                 <FooterLink link="/" target="parent">Home</FooterLink>
                                 <FooterLink link="/expertise" target="parent">Expertise</FooterLink>
                                 <FooterLink link="/projects" target="parent">Projects</FooterLink>
-                                <FooterLink link="" target="parent">Contact</FooterLink>
+                                <FooterLink link="/contact" target="parent">Contact</FooterLink>
                             </ul>
                         </div>
                         <div className="social">

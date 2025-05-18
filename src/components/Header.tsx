@@ -26,7 +26,7 @@ const Header: React.FunctionComponent = () => {
                         <AnimatedLinks link="/">Home</AnimatedLinks>
                         <AnimatedLinks link="/expertise">Expertise</AnimatedLinks>
                         <AnimatedLinks link="/projects">Projects</AnimatedLinks>
-                        <AnimatedLinks link="#">Contact</AnimatedLinks>
+                        <AnimatedLinks link="/contact">Contact</AnimatedLinks>
                     </ul>
                     <span className="cursor-pointer text-2xl sm:hidden"><IoMenu /></span>
                 </motion.nav>
