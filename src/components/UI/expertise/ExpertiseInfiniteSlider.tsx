@@ -6,10 +6,14 @@ import { IoLogoCss3, IoLogoHtml5, IoLogoSass } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql, SiNestjs, SiRedux, SiTypescript } from "react-icons/si";
 
-const ExpertiseInfiniteSlider: React.FunctionComponent = () => {
+interface IExpertiseInfiniteSliderProps {
+    direction: "left" | 'right'
+}
+
+const ExpertiseInfiniteSlider: React.FunctionComponent<IExpertiseInfiniteSliderProps> = ({ direction }) => {
     return (
         <>
-            <Marquee className="expertise-block flex items-center py-5 overflow-hidden" speed={ 150 } pauseOnHover={ true } gradient gradientColor="#1A191D" gradientWidth={200}>
+            <Marquee className="expertise-block flex items-center py-5 overflow-hidden" speed={ 100 } pauseOnHover={ true } gradient gradientColor="#1A191D" gradientWidth={50} direction={direction}>
                 <ul className="expertise-slider text-7xl flex items-center justify-center [&_li]:mx-8 [&_svg]:max-w-none">
                     <li className="text-[#E34E26]"><IoLogoHtml5 /></li>
                     <li className="text-[#1572B6]"><IoLogoCss3 /></li>

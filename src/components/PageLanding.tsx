@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
-import { textLeftToRight, textRightToLeft } from "../../../animations/homePageAnimations";
+import { LandingTextLeftToRight, LandingTextRightToLeft } from "../animations/layoutAnimation";
 
-const Landing: React.FunctionComponent = () => {
+interface IPageLandingProps {
+    title1: string
+    title2: string
+    text1: string
+    text2: string
+}
+
+const PageLanding: React.FunctionComponent<IPageLandingProps> = ({ title1, title2, text1, text2 }) => {
     return (
         <motion.div
             animate="animate"
@@ -11,35 +18,30 @@ const Landing: React.FunctionComponent = () => {
             <div className="home-landing flex flex-col xl:gap-20">
                 <div className="text flex items-start justify-between">
                     <motion.div
-                        variants={textLeftToRight}
+                        variants={ LandingTextLeftToRight }
                         className="large-text large-txt-1 uppercase text-[15em] leading-50"
                     >
-                        hello! i'm Dima
+                        { title1 }
                     </motion.div>
                     <motion.div
-                        variants={textRightToLeft}
+                        variants={ LandingTextRightToLeft }
                         className="small-text w-full text-xl max-w-[300px] text-white/50"
                     >
-                        I'm a frontend developer who loves building easy-to-use,
-                        attractive websites with clear, efficient, and reliable
-                        code. I enjoy creating user-friendly interfaces that enhance
-                        the browsing experience for everyone.
+                        { text1 }
                     </motion.div>
                 </div>
                 <div className="text flex items-start justify-between flex-row-reverse">
                     <motion.div
-                        variants={textRightToLeft}
+                        variants={LandingTextRightToLeft}
                         className="large-text large-txt-2 uppercase leading-50 text-[11em]"
                     >
-                        frontend developer
+                        { title2 }
                     </motion.div>
                     <motion.div
-                        variants={textLeftToRight}
+                        variants={LandingTextLeftToRight}
                         className="small-text w-full text-xl max-w-[300px] text-white/50"
                     >
-                        Every day, I work hard to improve my skills, build new
-                        things, face challenges, fix problems, and learn new to
-                        become better at what I do as a developer.
+                        { text2 }
                     </motion.div>
                 </div>
             </div>
@@ -47,8 +49,7 @@ const Landing: React.FunctionComponent = () => {
                 <img className='mix-blend-plus-lighter h-16 w-auto cursor-default m-auto' src="/image/scroll.gif"></img>
             </div>
         </motion.div>
-    );
-            
-};
+    )
+}
 
-export default Landing;
+export default PageLanding
