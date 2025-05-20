@@ -33,7 +33,7 @@ const Header: React.FunctionComponent = () => {
                         <AnimatedLinks link="/contact">Contact</AnimatedLinks>
                     </ul>
                     <span 
-                        className="cursor-pointer text-2xl sm:hidden"
+                        className="header-menu-btn cursor-pointer text-2xl sm:hidden"
                         onClick={toggleAside}
                     >
                         <IoMenu />

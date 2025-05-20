@@ -4,7 +4,7 @@ import { skills } from "../../../data/experience.data";
 import { ExpertiseTextLeftToRight, expertiseLevelAnim, expertiseLevelBlockAnim } from "../../../animations/expertiseBlockAnimation";
 
 
-const ExpertiseBars: React.FC = () => {
+const ExpertiseBars: React.FunctionComponent = () => {
     return (
         <div
             className="w-full flex flex-col gap-7"

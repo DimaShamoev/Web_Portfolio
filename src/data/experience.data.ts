@@ -39,11 +39,11 @@ export const experiences: IExperience[] = [
 ];
 
 export const skills: Skill[] = [
-    { id: 0, name: "html", level: 90 },
-    { id: 1, name: "css / scss / tailwind", level: 85 },
-    { id: 2, name: "js / ts", level: 80 },
-    { id: 3, name: "react", level: 80 },
-    { id: 4, name: "node js / nest js", level: 60 },
-    { id: 5, name: "Postgresql / mysql", level: 70 },
-    { id: 6, name: "git", level: 80 },
+    { id: 0, name: "html", level: 95 },
+    { id: 1, name: "css / scss / tailwind", level: 90 },
+    { id: 2, name: "js / ts", level: 90 },
+    { id: 3, name: "react", level: 85 },
+    { id: 4, name: "node js / nest js", level: 65 },
+    { id: 5, name: "Postgresql / mysql", level: 75 },
+    { id: 6, name: "git", level: 85 },
 ];

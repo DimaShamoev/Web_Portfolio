@@ -4,9 +4,10 @@ interface IAnimatedLinksProps {
 }
 
 const AnimatedLinks: React.FunctionComponent<IAnimatedLinksProps> = ({ children, link }) => {
+
     return (
         <li>
-            <a href={link} className="animated-link">
+            <a href={link} className='animated-link'>
                 {children}
             </a>
         </li>

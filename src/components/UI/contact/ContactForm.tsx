@@ -66,7 +66,7 @@ const ContactForm: React.FunctionComponent = () => {
                         <div className="input">
                             <textarea
                                 placeholder="Write Your Message Here..."
-                                className="w-full border-2 py-1 px-2 outline-none text-lg h-40"
+                                className="w-full border-2 py-1 px-2 outline-none text-lg h-40 resize-none"
                                 {...register('message', {
                                     required: "Message is required",
                                     minLength: {
@@ -81,7 +81,7 @@ const ContactForm: React.FunctionComponent = () => {
                     <div className="submit-button w-full">
                         <button 
                             type="submit"
-                            className="bg-white text-black py-1 text-xl w-full cursor-pointer"
+                            className="bg-white text-black py-1 border-2 text-xl w-full cursor-pointer transition-colors hover:bg-[#1A191D] hover:text-white"
                         >
                             submit
                         </button>

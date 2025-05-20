@@ -1,7 +1,7 @@
 import Container from "../components/Container"
-import ContactForm from "../components/contact/ContactForm"
+import ContactForm from "../components/UI/contact/ContactForm"
 
-const Contact = () => {
+const Contact: React.FunctionComponent = () => {
     return (
         <Container>
             <ContactForm />

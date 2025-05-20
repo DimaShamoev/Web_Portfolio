@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaLink, FaLocationDot } from "react-icons/fa6"
+
 interface IExperienceInfoProps {
     position: string
     period: string
@@ -32,7 +33,7 @@ const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ positio
                         { period }
                     </div>
                 </div>
-                <div className="expand-btn relative cursor-pointer rounded-full w-ful h-[30px] w-[30px]">
+                <div className="expand-btn relative cursor-pointer rounded-full w-ful h-[30px] w-[30px] transition-colors duration-300">
                     <div className={`lin-vertical absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2px] rounded-full bg-white transition-all duration-500 ${blockExpand ? 'rotate-0' : 'rotate-[270deg]'}`}></div>
                     <div className={`line-horizontal absolute right-[50%] top-[47%] translate-x-[50%] w-[15px] h-[2.5px] rounded-full bg-white transition-all duration-500 ${blockExpand ? '-rotate-180' : 'rotate-0'}`}></div>
                 </div>

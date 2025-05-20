@@ -18,7 +18,7 @@ const Aside: React.FunctionComponent = () => {
                 onClick={toggleAside}            
             ></div>
 
-            <aside className={`aside fixed top-0 bottom-0 w-full max-w-[450px] z-[5] bg-[#D3D3D3] sm-box-padding flex flex-col gap-5 transition-all duration-200 ${asideOpen ? 'right-[0px]' : 'right-[-450px]'}`}>
+            <aside className={`aside fixed top-0 bottom-0 w-full max-w-[450px] z-[5] bg-[#D3D3D3] sm-box-padding flex flex-col gap-5 transition-all duration-300 ${asideOpen ? 'right-[0px]' : 'right-[-450px]'}`}>
                 <div
                     className="close-btn flex justify-end text-4xl cursor-pointer"
                     onClick={toggleAside}

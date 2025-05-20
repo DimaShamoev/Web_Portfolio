@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 /* General */
-
 * {
     cursor: none;
 }
@@ -126,7 +125,27 @@ body {
     height: calc-size(auto, size);
 }
 
+/* mouse scroll icon animation */
+.mouse-scroll-ball {
+    animation: mouseScrollBall 2.5s cubic-bezier(0.15, 1, 0.15, 1) infinite;
+}
 
+@keyframes mouseScrollBall {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(25px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+}
 
 /* viewport */
 @media screen and (max-width: 1600px) {
@@ -316,6 +335,19 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+
+    /* Custom Cursor & Cursor */
+    * {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    .cursor {
+        display: none;
+    }
 
     /* Developing process UI card */
 

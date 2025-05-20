@@ -45,8 +45,10 @@ const PageLanding: React.FunctionComponent<IPageLandingProps> = ({ title1, title
                     </motion.div>
                 </div>
             </div>
-            <div className="anim w-full sm-box-padding">
-                <img className='mix-blend-plus-lighter h-16 w-auto cursor-default m-auto' src="/image/scroll.gif"></img>
+            <div className="cursor-scroll-icon w-full sm-box-padding mt-10">
+                <div className="mouse-border h-[50px] w-[25px] border-2 mx-auto rounded-full flex justify-center py-2.5 text-white/20">
+                    <div className="mouse-scroll-ball h-[5px] w-[5px] bg-white/20 rounded-full"></div>
+                </div>
             </div>
         </motion.div>
     )
