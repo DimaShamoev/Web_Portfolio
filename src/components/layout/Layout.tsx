@@ -4,6 +4,7 @@ import Header from "../Header"
 import { appear } from "../../animations/layoutAnimation"
 import Footer from "../Footer"
 import Aside from "../Aside"
+import Cursor from "../Cursor"
 
 const Layout: React.FunctionComponent = () => {
 
@@ -13,7 +14,8 @@ const Layout: React.FunctionComponent = () => {
             animate='animate'
             variants={ appear }
             className="relative flex flex-col min-h-screen bg-[#1A191D] overflow-hidden"
-        >
+        >      
+            <Cursor />
             <Header />
             <Aside />
             <main className="main flex flex-col flex-1 container">

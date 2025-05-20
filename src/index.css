@@ -2,9 +2,13 @@
 @import "tailwindcss";
 
 /* General */
+
+* {
+    cursor: none;
+}
+
 html {
     scroll-behavior: smooth;
-    /* cursor: none; */
 }
 
 body {

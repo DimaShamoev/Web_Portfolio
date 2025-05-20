@@ -3,13 +3,10 @@ import { routes } from "./routes/routes"
  
 const App: React.FunctionComponent = () => {
     return (
-        <div className="App">
+        <div className="App relative">
             <RouterProvider router={routes} />
         </div>
     )
 }
 
 export default App
-
-// TODO
-// Optimize and clean project
