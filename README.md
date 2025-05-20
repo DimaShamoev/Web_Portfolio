@@ -32,7 +32,12 @@ $ npm install
 $ yarn
 ```
 
-3. Start the development server
+3. Set up .env file
+```env
+VITE_FORM_ENDPOINT=https://formspree.io/f/:YourFormspreeId
+```
+
+4. Start the development server
 ```bash
 $ npm run dev
 $ yarn dev
