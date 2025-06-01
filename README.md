@@ -1,7 +1,7 @@
-# Web Portfolio
+# Web Portfolio 🌎
 This is my personal web portfolio made using modern technologies like React and TypeScript. It is designed to look good on all screen sizes, including phones, tablets, and computers. The website includes information about me, my skills, and some of the projects I have worked on. It also has a contact section so people can reach me easily. I built this portfolio to share my work and to show what I can do as a web developer.
 
-### Technologies Used
+### Technologies Used ⚒️
 * **React** – for building the user interface
 * **TypeScript** – for type safety and better code structure
 * **React Router DOM** – for client-side routing between pages
@@ -10,7 +10,7 @@ This is my personal web portfolio made using modern technologies like React and 
 * **Framer Motion** – for smooth animations
 * **Css / Tailwind Css** – for fast and responsive styling
 
-### Features
+### Features ✨
 * Responsive design for all devices
 * Smooth page transitions and animations
 * Easy navigation with client-side routing
@@ -20,7 +20,7 @@ This is my personal web portfolio made using modern technologies like React and 
 * State management for better control
 * Built with performance and scalability in mind
 
-### Getting Started
+### Getting Started 🚀
 1. Clone the repository
 ```bash
 $ git clone https://github.com/DimaShamoev/Web_Portfolio
