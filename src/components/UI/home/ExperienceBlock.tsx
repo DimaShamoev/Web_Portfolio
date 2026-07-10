@@ -24,7 +24,7 @@ const ExperienceBlock: React.FunctionComponent = () => {
                 whileInView='animate'
                 variants={ blockBottomToTop }
                 viewport={{ once: true, amount: 0.1 }}
-                className="experience-list flex flex-col gap-4"
+                className="experience-list flex flex-col gap-6"
             >
 
                 { experiences.map((experience => (

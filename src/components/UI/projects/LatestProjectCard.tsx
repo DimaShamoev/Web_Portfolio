@@ -26,14 +26,14 @@ const LatestProjectCard: React.FunctionComponent<ILatestProjectCardProps> = ({ t
             viewport={{ once: true, amount: 0.1 }}
             onMouseEnter={() => handelHover(true)}
             onMouseLeave={() => handelHover(false)}
-            className="project-card border-2 w-min min-w-[250px] grow"
+            className="project-card border-2 min-w-[280px] flex flex-col flex-1 overflow-hidden"
         >
-            <div className={`project-title relative text-6xl xs-box-padding border-b-2 transition-all duration-150 flex items-center justify-center text-center`}>
+            <div className="project-title text-[42px] xs-box-padding border-b-2 flex items-center justify-center text-center relative">
                 <p className="z-[1] relative">{ title }</p>
                 <div className={`background left-0 right-0 bottom-0 absolute transition-all ${isHover ? 'top-0': 'top-full'} ${titleBG}`}></div>
             </div>
-            <div className="card-bottom p-4 flex flex-col gap-2">
-                <div className="description text-2xl">
+            <div className="card-bottom p-4 flex flex-col gap-2 h-full">
+                <div className="description text-2xl flex-1">
                     { children }
                 </div>
                 <div className="stack relative text-xl text-gray-50/50 h-[20px] overflow-hidden">

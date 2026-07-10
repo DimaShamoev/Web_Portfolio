@@ -34,11 +34,11 @@ export const latestProjectsData: projectsDataType[] = [
     },
     {
         id: 4,
-        title: "Ebay Clone",
+        title: "Text Comparable",
         titleBG: "bg-[#AB5E45]",
-        children: "A full-stack PHP app with user authentication, item listings, shopping cart, order management, and an admin panel — built without a framework",
-        stack: ["Php", "Css", "Js", "MySql"],
-        url: "https://github.com/DimaShamoev/ebay-php-clone"
+        children: "A text comparison tool that highlights differences between two texts using the Longest Common Subsequence (LCS) algorithm",
+        stack: ["Ts", "React", "Tailwind"],
+        url: "https://github.com/DimaShamoev/text_comparable"
     },
 ]
 
@@ -69,19 +69,19 @@ export const projectsData: projectsDataType[] = [
     },
     {
         id: 4,
-        title: "Ebay Clone",
+        title: "Text Comparable",
         titleBG: "bg-[#AB5E45]",
-        children: "A full-stack PHP application that includes user authentication, item listings, a shopping cart, order management, and an admin panel. Everything is built from scratch without using any PHP frameworks, focusing on clean structure and functionality",
-        stack: ["Php", "Css", "Js", "MySql"],
-        url: "https://github.com/DimaShamoev/ebay-php-clone"
+        children: "A text comparison tool that highlights differences between two texts using the Longest Common Subsequence (LCS) algorithm",
+        stack: ["Ts", "React", "Tailwind"],
+        url: "https://github.com/DimaShamoev/text_comparable"
     },
     {
         id: 5,
-        title: 'BOXCAR',
-        titleBG: 'bg-[#7886C7]',
-        children: 'This is a simple UI application built with React and TypeScript. It serves as a user-friendly interface showcasing modern design principles and responsive layouts. Note that this app focuses on UI-only functionality and does not include features like renting, payments, or ordering',
-        stack: ['TS', 'React', 'Redux', 'React-Form', 'Framer' ],
-        url: 'https://github.com/DimaShamoev/Car_Rent_WebSite'
+        title: "Image Search Application",
+        titleBG: "bg-[#3B82F6]",
+        children: "A React application for searching high-quality images through the Unsplash API. Built as the final technical assessment for Sweeft Digital and successfully passed. Features real-time search, responsive image galleries, and efficient API data fetching with Tanstack Query.",
+        stack: ["React", "TypeScript", "Tanstack Query", "Tailwind CSS", "Unsplash API"],
+        url: "https://github.com/DimaShamoev/searchImage"
     },
     {
         id: 6,

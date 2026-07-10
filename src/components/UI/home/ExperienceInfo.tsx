@@ -13,14 +13,14 @@ interface IExperienceInfoProps {
 
 const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ position, period, imgUrl, location, siteUrl, stack, children }) => {
 
-    const [blockExpand, SetBlockExpand] = useState<boolean>(true)
+    const [blockExpand, SetBlockExpand] = useState<boolean>(false)
 
     const handelClick = (): void => {
         SetBlockExpand(prev => !prev)
     }
 
     return (
-        <div className={`experience-full-info max-w-[730px] flex flex-col gap-4 overflow-hidden transition-all duration-500 ${blockExpand ? 'expanded' : 'h-[50px]'}`}>
+        <div className={`experience-full-info max-w-[730px] flex flex-col gap-3 overflow-hidden transition-all duration-500 ${blockExpand ? 'expanded' : 'h-[50px]'}`}>
             <div
                 className="info-header flex justify-between items-center gap-4 py-3 px-5 max-h-[50px] border-2"
                 onClick={handelClick}
@@ -39,8 +39,12 @@ const ExperienceInfo: React.FunctionComponent<IExperienceInfoProps> = ({ positio
                 </div>
             </div>
             <div className="info-body border-2 p-5 flex flex-row-reverse items-center gap-10">
-                <div className="image-side max-w-[250px] text-center">
-                    <img src={ imgUrl } alt="Company_Image" />
+                <div className="image-side w-[80px] h-[80px] flex items-center justify-center shrink-0">
+                    <img
+                        src={imgUrl}
+                        alt="Company_Image"
+                        className="max-w-full max-h-full object-contain"
+                    />
                 </div>
                 <div className="text-side flex flex-col gap-5">
                     <div className="company-info flex items-center gap-5 text-slate-50/80">

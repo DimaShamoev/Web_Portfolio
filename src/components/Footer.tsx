@@ -62,7 +62,7 @@ const Footer: React.FunctionComponent = () => {
                     variants={footerTextBottomToTop}
                     className="copy-rights uppercase"
                 >
-                    © 2025. Copyright. All Rights reserved
+                    © 2025-2026. Copyright. All Rights reserved
                 </motion.div>
             </div>
         </motion.footer>
