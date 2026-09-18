@@ -1,10 +1,11 @@
 import Marquee from "react-fast-marquee";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiJsBadge, DiPostgresql } from "react-icons/di";
-import { FaNode, FaReact } from "react-icons/fa";
+import { FaAngular, FaGitAlt, FaLaravel, FaNode, FaPhp, FaReact } from "react-icons/fa";
+import { FcLinux } from "react-icons/fc";
 import { IoLogoCss3, IoLogoHtml5, IoLogoSass } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql, SiNestjs, SiRedux, SiTypescript } from "react-icons/si";
+import { SiExpress, SiMysql, SiNestjs, SiNextdotjs, SiRedux, SiTypescript } from "react-icons/si";
 
 interface IExpertiseInfiniteSliderProps {
     direction: "left" | 'right'
@@ -22,9 +23,14 @@ const ExpertiseInfiniteSlider: React.FunctionComponent<IExpertiseInfiniteSliderP
                     <li className="rounded-lg overflow-hidden text-[#F7DF1E]"><DiJsBadge /></li>
                     <li className="text-[#377CC8]"><SiTypescript /></li>
                     <li className="text-[#61DAFB]"><FaReact /></li>
+                    <li className="text-[#white]"><SiNextdotjs /></li>
                     <li className="text-[#764ABC]"><SiRedux /></li>
+                    <li className="text-[#DD0031]"><FaAngular /></li>
                     <li className="text-[#80BD00]"><FaNode /></li>
+                    <li className="text-[#80BD00]"><SiExpress /></li>
                     <li className="text-[#E0234E]"><SiNestjs /></li>
+                    <li className="text-[#6e7fca]"><FaPhp /></li>
+                    <li className="text-[#E11502]"><FaLaravel /></li>
                     <li>
                         <p className="relative">
                             <BiLogoPostgresql className="text-cyan-700" />
@@ -32,6 +38,8 @@ const ExpertiseInfiniteSlider: React.FunctionComponent<IExpertiseInfiniteSliderP
                         </p>
                     </li>
                     <li className="text-[#0aa2e3]"><SiMysql /></li>
+                    <li className="text-[#F05133]"><FaGitAlt /></li>
+                    <li className="text-[#F05133]"><FcLinux /></li>
                 </ul>
             </Marquee>
         </>

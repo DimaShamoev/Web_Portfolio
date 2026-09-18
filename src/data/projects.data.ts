@@ -10,6 +10,14 @@ interface projectsDataType {
 export const latestProjectsData: projectsDataType[] = [
     {
         id: 1,
+        title: "Gegmio CRM",
+        titleBG: "bg-[#F94B00]",
+        children: "An all-in-one CRM built to help you manage any type of business with ease. More than just a management tool, it seamlessly connects to the Gegmio.com marketplace to actively drive new customers straight to your pipeline",
+        stack: ["React", "TS", "Redux", "Axios", "Tailwind", "Shadcn UI", "i18n", "Rest API", "Web Sockets"],
+        url: "https://gegmiov2.netlify.app/"
+    },
+    {
+        id: 2,
         title: "Form Space",
         titleBG: "bg-red-500",
         children: "A fullstack web application where user can create his own forms, fill up others' created forms, and interact through likes and comments",
@@ -17,7 +25,7 @@ export const latestProjectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/FormSpace"
     },
     {
-        id: 2,
+        id: 3,
         title: "Expense Tracker",
         titleBG: "bg-violet-500",
         children: "Expense Tracker is a full-stack web application designed to manage expenses and income transactions with user authentication and category management",
@@ -25,7 +33,7 @@ export const latestProjectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/ExpenseTracker"
     },
     {
-        id: 3,
+        id: 4,
         title: "Blogging Space",
         titleBG: "bg-green-400/70",
         children: "A full-stack application that allows users to create and read blog posts, with authorization features to ensure only registered users can create posts and view personalized content.",
@@ -33,7 +41,7 @@ export const latestProjectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/blog-post-app"
     },
     {
-        id: 4,
+        id: 5,
         title: "Text Comparable",
         titleBG: "bg-[#AB5E45]",
         children: "A text comparison tool that highlights differences between two texts using the Longest Common Subsequence (LCS) algorithm",
@@ -45,6 +53,14 @@ export const latestProjectsData: projectsDataType[] = [
 export const projectsData: projectsDataType[] = [
     {
         id: 1,
+        title: "Gegmio CRM",
+        titleBG: "bg-[#F94B00]",
+        children: "An all-in-one CRM built to help you manage any type of business with ease. More than just a management tool, it seamlessly connects to the Gegmio.com marketplace to actively drive new customers straight to your pipeline",
+        stack: ["React", "TS", "Redux", "Axios", "Tailwind", "Shadcn UI", "i18n", "Rest API", "Web Sockets"],
+        url: "https://gegmiov2.netlify.app/"
+    },
+    {
+        id: 2,
         title: "Form Space",
         titleBG: "bg-red-500",
         children: "A full-stack web application that allows users to create custom forms, fill out forms made by others, and engage with the community by liking and commenting on submitted responses. It supports user interaction and content sharing in a structured way",
@@ -52,7 +68,7 @@ export const projectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/FormSpace"
     },
     {
-        id: 2,
+        id: 3,
         title: "Expense Tracker",
         titleBG: "bg-violet-500",
         children: "Expense Tracker is a full-stack web application that helps users manage their income and expenses. It includes secure user authentication, the ability to add, edit, and delete transactions, and tools for organizing transactions by category to keep finances in order",
@@ -60,7 +76,7 @@ export const projectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/ExpenseTracker"
     },
     {
-        id: 3,
+        id: 4,
         title: "Blogging Space",
         titleBG: "bg-green-400/70",
         children: "A complete full-stack application where users can register, log in, and write their own blog posts. It also allows everyone to read published posts. The app includes secure authorization so that only registered users can create and manage their posts, while also showing content based on the user's profile or activity",
@@ -68,7 +84,7 @@ export const projectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/blog-post-app"
     },
     {
-        id: 4,
+        id: 5,
         title: "Text Comparable",
         titleBG: "bg-[#AB5E45]",
         children: "A text comparison tool that highlights differences between two texts using the Longest Common Subsequence (LCS) algorithm",
@@ -76,7 +92,7 @@ export const projectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/text_comparable"
     },
     {
-        id: 5,
+        id: 6,
         title: "Image Search Application",
         titleBG: "bg-[#3B82F6]",
         children: "A React application for searching high-quality images through the Unsplash API. Built as the final technical assessment for Sweeft Digital and successfully passed. Features real-time search, responsive image galleries, and efficient API data fetching with Tanstack Query.",
@@ -84,7 +100,7 @@ export const projectsData: projectsDataType[] = [
         url: "https://github.com/DimaShamoev/searchImage"
     },
     {
-        id: 6,
+        id: 7,
         title: 'Coming Soon',
         titleBG: 'bg-[#70c95b]',
         children: "This project is still in progress and will be released soon. It's being thoughtfully designed and developed to provide a useful and enjoyable experience. We're working hard to ensure everything works smoothly and looks great. Stay tuned for more",

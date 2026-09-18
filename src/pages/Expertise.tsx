@@ -16,8 +16,8 @@ const Expertise: React.FunctionComponent = () => {
             />
             <ExpertiseInfiniteSlider direction="left"/>
             <ExpertiseBlock />
-            <ExpertiseInfiniteSlider direction="right" />
             <ExpertiseBars />
+            <ExpertiseInfiniteSlider direction="right" />
         </Container>
     );
 };

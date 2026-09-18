@@ -1,16 +1,15 @@
 import { IoMenu } from "react-icons/io5"
-import { headerTopToBottomAnim } from "../animations/headerAnimations"
 import { motion } from "framer-motion";
-import AnimatedLinks from "./UI/AnimatedLinks";
-import { Link } from "react-router-dom";
-import { useAsideStore } from "../store/UseAsideStore";
+import { useAsideStore } from "../../store/UseAsideStore";
+import { headerTopToBottomAnim } from "../../animations/headerAnimations";
+import AnimatedLinks from "../UI/AnimatedLinks";
 
 const Header: React.FunctionComponent = () => {
 
     const toggleAside = useAsideStore(state => state.toggleAside)
 
     return (
-        <header className="flex justify-between items-center sm-box-padding backdrop-blur-md bg-[#1A191D]/70 container">
+        <header className="sticky top-0 flex justify-between items-center sm-box-padding backdrop-blur-md bg-[#1A191D]/70 container">
             <div className="header-wrapper flex items-center justify-between w-full">
                 <motion.div
                     initial="initial"
@@ -18,7 +17,7 @@ const Header: React.FunctionComponent = () => {
                     variants={ headerTopToBottomAnim }
                     className="logo text-3xl sm:text-5xl"
                 >
-                    <Link to="/">{ `<DIMA />` }</Link>
+                    <a href="/">{ `<DIMA />` }</a>
                 </motion.div>
                 <motion.nav
                     initial="initial"

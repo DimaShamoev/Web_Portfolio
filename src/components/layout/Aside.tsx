@@ -1,10 +1,10 @@
 import { IoClose } from "react-icons/io5"
-import AsideLinks from "./UI/AsideLinks"
 import { LuMail } from "react-icons/lu"
 import { BsBoxes } from "react-icons/bs"
 import { GrTools } from "react-icons/gr"
 import { AiOutlineHome } from "react-icons/ai"
-import { useAsideStore } from "../store/UseAsideStore"
+import { useAsideStore } from "../../store/UseAsideStore"
+import AsideLinks from "../UI/AsideLinks"
 
 const Aside: React.FunctionComponent = () => {
 

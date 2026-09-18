@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import Cursor from "../Cursor"
-import Footer from "../Footer"
-import Header from "../Header"
 import { motion } from "framer-motion"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const ErrorPage: React.FunctionComponent = () => {
 

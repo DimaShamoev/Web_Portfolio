@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom"
-import { routes } from "./routes/routes"
+import { routes } from "../routes/routes"
  
 const App: React.FunctionComponent = () => {
     return (

@@ -15,7 +15,7 @@ const ProjectsList: React.FunctionComponent = () => {
             >
                 projects
             </motion.div>
-            <div className="">
+            <div>
                 {projectsData.map((project) => (
                     <ProjectCard
                         key={project.id}

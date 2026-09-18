@@ -16,7 +16,7 @@ const LatestProjects: React.FunctionComponent = () => {
             >
                 latest projects
             </motion.div>
-            <div className="latest-project-list flex gap-5 flex-wrap">
+            <div className="latest-project-list flex gap-5 flex-wrap justify-center">
 
                 {latestProjectsData.map((data => (
                     <LatestProjectCard key={data.id} title={data.title} titleBG={data.titleBG} stack={data.stack} url={data.url}>

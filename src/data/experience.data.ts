@@ -20,7 +20,7 @@ export const experiences: IExperience[] = [
     {
         id: 1,
         position: "Frontend Engineer - Junior",
-        period: "2025 - Present",
+        period: "February 2026 - Present",
         imgUrl: "/image/gegmio_logo.png",
         location: "Tbilisi, Georgia (Remote)",
         siteUrl: "https://gegmio.com/",
@@ -34,13 +34,12 @@ export const experiences: IExperience[] = [
             "Sockets",
             "Git",
         ],
-        children:
-            "Developing a business management (CRM) platform using React and TypeScript. Building responsive interfaces, integrating REST APIs, implementing authentication, creating reusable components, and managing state with RTK Query",
+        children: "Developing a business management (CRM) platform using React and TypeScript. Building responsive interfaces, integrating REST APIs, implementing authentication, creating reusable components, and managing state with RTK Query",
     },
     {
         id: 2,
         position: "“Commercial Software Development — JavaScript” training",
-        period: "2025 - 2025",
+        period: "March 2025 - May 2025",
         imgUrl: "/image/iTransition_logo.png",
         location: "Tbilisi, Georgia (Remote)",
         siteUrl: "https://www.itransition.com/",
@@ -53,17 +52,19 @@ export const experiences: IExperience[] = [
             "PostgreSql/MySql",
             "Git",
         ],
-        children:
-            "Itransition provided hands-on experience in full-stack web development. It taught both client-side development with JavaScript and Typescript and server-side development with Node. js. I completed a full-stack project using React with TypeScript, Tailwind CSS, NestJS and PostgreSQL during the internship.",
+        children: "ITransition provided hands-on experience in full-stack web development. It taught both client-side development with JavaScript and Typescript and server-side development with Node. js. I completed a full-stack project using React with TypeScript, Tailwind CSS, NestJS and PostgreSQL during the internship.",
     }
 ];
 
 export const skills: Skill[] = [
-    { id: 0, name: "html", level: 95 },
-    { id: 1, name: "css / scss / tailwind", level: 90 },
-    { id: 2, name: "js / ts", level: 90 },
-    { id: 3, name: "react", level: 85 },
-    { id: 4, name: "node js / nest js", level: 65 },
-    { id: 5, name: "Postgresql / mysql", level: 75 },
-    { id: 6, name: "git", level: 85 },
+    { id: 0, name: "html", level: 100 },
+    { id: 1, name: "css / scss / tailwind", level: 100 },
+    { id: 2, name: "javascript / typescript", level: 95 },
+    { id: 3, name: "node js / express js / nest js", level: 80 },
+    { id: 4, name: "react js / next js", level: 85 },
+    { id: 5, name: "angular", level: 65 },
+    { id: 6, name: "php", level: 75 },
+    { id: 7, name: "laravel", level: 65 },
+    { id: 8, name: "postgresql / mysql", level: 85 },
+    { id: 9, name: "git", level: 90 },
 ];

@@ -1,6 +1,6 @@
-import { footerTextLeftToRight, footerTextRightToBottom, footerTextBottomToTop } from "../animations/footerAnimation"
-import FooterLink from "./UI/FooterLink"
 import { motion } from "framer-motion"
+import FooterLink from "../UI/FooterLink"
+import { footerTextBottomToTop, footerTextLeftToRight, footerTextRightToBottom } from "../../animations/footerAnimation"
 
 const Footer: React.FunctionComponent = () => {
     return (

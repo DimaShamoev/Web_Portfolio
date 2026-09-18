@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom"
 import { motion } from 'framer-motion'
-import Header from "../Header"
+import Header from "../layout/Header"
 import { appear } from "../../animations/layoutAnimation"
-import Footer from "../Footer"
-import Aside from "../Aside"
+import Footer from "../layout/Footer"
+import Aside from "../layout/Aside"
 import Cursor from "../Cursor"
 
 const Layout: React.FunctionComponent = () => {

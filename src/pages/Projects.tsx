@@ -12,7 +12,7 @@ const Projects: React.FunctionComponent = () => {
                 title2="Built With Code"
                 text2="Each project shows my skills in action — from layouts and animations to API work and UI logic. I focus on clean code, useful features, and a smooth user experience"
             />
-            <ExpertiseInfiniteSlider direction="left" />
+            <ExpertiseInfiniteSlider direction="right" />
             <ProjectsList />
             
         </Container>

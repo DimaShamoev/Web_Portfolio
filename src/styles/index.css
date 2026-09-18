@@ -134,13 +134,16 @@ body {
     0% {
         transform: translateY(0);
     }
+
     15% {
         transform: translateY(-5px);
     }
+
     75% {
         transform: translateY(25px);
         opacity: 0.7;
     }
+
     100% {
         transform: translateY(25px);
         opacity: 0;
@@ -149,6 +152,7 @@ body {
 
 /* viewport */
 @media screen and (max-width: 1600px) {
+
     /* Developing UI card */
     .developing-card {
         max-width: 700px;
@@ -156,7 +160,7 @@ body {
 }
 
 @media screen and (max-width: 1510px) {
-    
+
     /* Landing text */
     .home-landing {
         gap: 70px;
@@ -177,6 +181,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+
     /* Landing text */
     .large-txt-2 {
         font-size: 7em;
@@ -190,6 +195,7 @@ body {
 }
 
 @media screen and (max-width: 1120px) {
+
     /* Landing text */
     .large-txt-1 {
         font-size: 9em;
@@ -202,14 +208,16 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
+
     /* Landing text */
     .large-txt-2 {
         font-size: 5em;
     }
-    
+
 }
 
 @media screen and (max-width: 1000px) {
+
     /* Developing process UI card */
     .developing-card {
         max-width: 100%;
@@ -230,6 +238,7 @@ body {
 }
 
 @media screen and (max-width: 970px) {
+
     /* Landing text */
     .large-txt-1 {
         font-size: 7em;
@@ -241,6 +250,7 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
     /* Landing text */
     .home-landing {
         gap: 40px;
@@ -252,7 +262,7 @@ body {
     }
 
     .large-text {
-        line-height: 1.3    
+        line-height: 1.3
     }
 
     .small-text {
@@ -301,11 +311,12 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+
     /* Custom Containers */
     .box-padding {
         padding: 20px 20px;
     }
-    
+
     .sm-box-padding {
         padding: 10px 20px;
     }
@@ -316,6 +327,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
     /* Experience */
     .position-time {
         display: none;
@@ -323,6 +335,7 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+
     /* Home Landing */
     .large-text {
         font-size: 4em;
@@ -379,6 +392,7 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
     /* Footer */
     .footer-body {
         flex-direction: column;
