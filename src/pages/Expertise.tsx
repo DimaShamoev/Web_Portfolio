@@ -1,7 +1,7 @@
 import ExpertiseBlock from "../components/UI/expertise/ExpertiseBlock";
 import ExpertiseInfiniteSlider from "../components/UI/expertise/ExpertiseInfiniteSlider";
 import ExpertiseBars from "../components/UI/expertise/ExpertiseBars";
-import Container from "../components/Container";
+import Container from "../components/layout/Container";
 import PageLanding from "../components/PageLanding";
     
 

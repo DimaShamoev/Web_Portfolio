@@ -1,4 +1,4 @@
-import Container from "../components/Container"
+import Container from "../components/layout/Container"
 import PageLanding from "../components/PageLanding"
 import ExpertiseInfiniteSlider from "../components/UI/expertise/ExpertiseInfiniteSlider"
 import ProjectsList from "../components/UI/projects/ProjectsList"

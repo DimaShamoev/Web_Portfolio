@@ -1,4 +1,4 @@
-import Container from '../components/Container'
+import Container from '../components/layout/Container'
 import PageLanding from '../components/PageLanding'
 import ExpertiseBlock from '../components/UI/expertise/ExpertiseBlock'
 import DevelopingProcess from '../components/UI/home/DevelopingProcess'
